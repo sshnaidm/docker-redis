@@ -8,4 +8,4 @@ RUN apk update && \
     rm -rf /root/.cache
 
 EXPOSE 6379
-CMD ["redis-server"]
+CMD ["redis-server", "--protected-mode", "no"]
